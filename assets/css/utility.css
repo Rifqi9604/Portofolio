@@ -1,0 +1,35 @@
+.nav-cont {
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-menu li a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+}
+
+.nav-menu .home,
+.nav-menu .informatika,
+.nav-menu .komputer,
+.nav-menu .sistem-informasi {
+    text-decoration: underline;
+}
+
+.tes {
+    color: red
+}

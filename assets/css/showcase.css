@@ -1,0 +1,133 @@
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+
+    body{
+        background: linear-gradient(to right, #f8cdda,  #1d2b64);
+    }
+
+    .container {
+        margin: auto;
+        justify-content: space-around;
+        align-self: center;
+        padding: 16px;
+        display: flex;
+        padding-top: 9rem;
+    }
+
+    .top-left {
+        padding-left: 1rem;
+        padding-right: 1rem; 
+        align-self: center; 
+        width: 100%;
+    }
+
+
+    .top-right {
+        padding-left: 1rem;
+        padding-right: 1rem; 
+        align-self: flex-end; 
+        width: 100%;
+    }
+
+    .top-right-img-wrapper {
+        display: flex; 
+        justify-content: center;
+        position: relative;
+    }
+
+    .top-right-img-wrapper img{
+        margin-top: -530px;
+    }
+
+    .hero-logo{
+        z-index: 10; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        max-width: 100%; 
+    }
+
+    .blob {
+        position: absolute; 
+        bottom: -5rem; 
+        left: 50%; 
+        --transform-translate-x: -50%; 
+    }
+
+    .slogan h1{
+        margin-top: 0;
+        font-size: 60px;
+        font-family: 'Oswald', sans-serif;
+        color: #1D2671;
+    }
+
+    .slogan {
+        margin-left: 150px;
+    }
+
+    .code {
+        margin-left: 110px;
+    }
+
+    .create {
+        margin-left: 210px;
+    }
+
+    .fac-exp h2 {
+        font-size: 18px;
+        font-family: "IBM Plex Mono";
+        text-align: justify;
+    }
+
+    .button-play {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #1d2b64;
+        margin-top: 2rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem; 
+        padding-left: 2rem;
+        padding-right: 2rem; 
+        color: #f8cdda; 
+        font-size: 1.5rem;
+        line-height: 1.5rem; 
+        font-weight: 600; 
+        transition: all 300ms ease-in-out;
+        border-radius: 25px; 
+    }
+
+    .button-play:hover .text-play {
+        color: #1d2b64
+    }
+    
+    .button-play:hover{
+        background-color: #fff;
+    }
+    
+
+    /* ketika keadaan layar 1024px */
+    @media (min-width: 1024px) { 
+        .top-left {
+            width: 50%;
+        }
+
+        .top-right {
+            width: 50%;
+        }
+
+        .top-right-img-wrapper {
+            right: 0; 
+            margin-top: 0; 
+        }
+    }
+
+    @media (min-width: 768px) {
+        .blob {
+            --transform-scale-x: 1.25;
+            --transform-scale-y: 1.25; 
+        }
+    }
